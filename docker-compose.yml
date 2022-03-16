@@ -6,19 +6,10 @@ services:
     container_name: kafdrop
     environment:
       - KAFKA_BROKERCONNECT=${KAFKA_BROKERCONNECT}
-      #- KAFKA_BROKERCONNECT=b-1.ap2-loges-msk.9hmxkr.c2.kafka.ap-south-1.amazonaws.com:9092,b-2.ap2-loges-msk.9hmxkr.c2.kafka.ap-south-1.amazonaws.com:9092
         #    networks:
         #      - kfk-zkp-net
     ports:
       - "9000:9000"
-        #    depends_on:
-        #      - kfk1
-        #      - kfk2
-        #      - kfk3
-        #      - zkp1
-        #      - zkp2
-        #      - zkp3
-        #
 
         #networks:
         #  kfk-zkp-net:
